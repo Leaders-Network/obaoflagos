@@ -68,7 +68,7 @@ export default function Footer() {
                 <PhoneIcon /> <span>+234 XXX XXX XXXX</span>
               </li>
               <li className="flex items-center space-x-3">
-                <EmailIcon /> <span>info@obaoflags.com</span>
+                <EmailIcon /> <span>info@obaoflagos.com</span>
               </li>
             </ul>
           </motion.div>
