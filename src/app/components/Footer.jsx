@@ -65,7 +65,7 @@ export default function Footer() {
                 <MapIcon /> <span>Lagos State, Nigeria</span>
               </li>
               <li className="flex items-center space-x-3">
-                <PhoneIcon /> <span>+234 XXX XXX XXXX</span>
+                <PhoneIcon /> <span>+234 8085 788 270</span>
               </li>
               <li className="flex items-center space-x-3">
                 <EmailIcon /> <span>info@obaoflagos.com</span>
@@ -81,7 +81,7 @@ export default function Footer() {
           animate={fadeInUp.animate}
           transition={{ ...fadeInUp.transition, delay: 0.6 }}
         >
-          <SocialLink href="#" icon={<FacebookIcon />} />
+          <SocialLink href="https://www.facebook.com/eleadeadersnetwork" icon={<FacebookIcon />} />
           <SocialLink href="#" icon={<TwitterIcon />} />
           <SocialLink href="#" icon={<InstagramIcon />} />
           <SocialLink href="#" icon={<LinkedInIcon />} />

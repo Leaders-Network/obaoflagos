@@ -40,7 +40,7 @@ export default function Body() {
             transition={{ ...fadeInUp.transition, delay: 0.2 }}
           >
             <div className="flex items-center mb-4">
-              <div className="bg-green-100 p-3 rounded-full mr-4">
+              <div className="bg-green-100 p-3 rounded-full mr-4 animate-bounce">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-green-600"
@@ -72,7 +72,7 @@ export default function Body() {
             transition={{ ...fadeInUp.transition, delay: 0.3 }}
           >
             <div className="flex items-center mb-4">
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
+              <div className="bg-blue-100 p-3 rounded-full mr-4 animate-bounce">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-blue-600"
@@ -93,7 +93,7 @@ export default function Body() {
               </h2>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              {t("Whether you’re a history enthusiast, cultural explorer, or a proud Lagosian, this platform invites you to dive deep into the heart of Lagos’s royal heritage. Let the stories of courage, wisdom, and unity inspire you.")}
+              {t("Whether you're a history enthusiast, cultural explorer, or a proud Lagosian, this platform invites you to dive deep into the heart of Lagos’s royal heritage. Let the stories of courage, wisdom, and unity inspire you.")}
             </p>
           </MotionSection>
         </div>
