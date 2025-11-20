@@ -28,7 +28,8 @@ export default function Navbar() {
           
           <div className='hidden items-center font-semibold md:flex space-x-6'>
             <a href='/pages/about' className='text-gray-700 hover:text-green-700'>About</a>
-            <a href='/pages/theking' className='text-gray-700 hover:text-green-700'>Oba Akiolu</a>
+            {/* <a href='/pages/theking' className='text-gray-700 hover:text-green-700'>Oba Akiolu</a> */}
+            <a href='/pages/blog' className='text-gray-700 hover:text-green-700'>Monarchs</a>
                       <div className='relative group'>
                         <a href='#' className='text-gray-700 hover:text-green-700'>History</a>
                         <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
@@ -85,8 +86,7 @@ export default function Navbar() {
                             </ul>
                           </li>
                         </ul>
-                      </div>
-            <a href='/pages/blog' className='text-gray-700 hover:text-green-700'>Blog</a>
+                      </div>            
             <a href='/pages/contact' className='text-gray-700 hover:text-green-700'>Contact</a>
             <div className="relative">
               <button 

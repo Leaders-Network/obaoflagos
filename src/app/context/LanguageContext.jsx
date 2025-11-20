@@ -35,7 +35,7 @@ const translations = {
 
     // Body Content
     discoverRichHistory:
-      "Discover the rich history and cultural significance of the Obas of Lagos, guardians of our traditions and bridges to our future",
+      "Discover the rich history and cultural significance of the Nigeria Royalties, guardians of our traditions and bridges to our future",
     whyThisMatters: "Why This Matters",
     exploreAndLearn: "Explore & Learn",
     getStartedToday: "Get Started Today",

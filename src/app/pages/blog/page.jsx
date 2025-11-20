@@ -6,54 +6,54 @@ import Footer from "@/app/components/Footer";
 export default function page() {
   const blogPosts = [
     {
-      title: "Traditional Yoruba Wedding Ceremonies: A Royal Perspective",
+      title: "OBA OF BENIN",
       date: "March 15, 2024",
-      image: "/images/yoruba-wedding.jpg",
+      image: "/images/ObaofBenin.jpg",
       author: "His Royal Majesty",
       category: "Traditions",
       excerpt:
         "Discover the rich cultural heritage and beautiful traditions of Yoruba wedding ceremonies, from the engagement ceremony (Idana) to the grand reception. Learn about the significance of each ritual and how the palace preserves these sacred traditions...",
     },
     {
-      title: "The Sacred History of the Oba's Crown: A Symbol of Authority",
+      title: "ALAAFIN OF OYO",
       date: "March 10, 2024",
-      image: "/images/obas-crown.jpg",
+      image: "/images/alaafinOyo.jpg",
       author: "Palace Historian",
       category: "Royal Heritage",
       excerpt:
         "Explore the symbolic significance and historical importance of the sacred crown worn by the Oba of Lagos. Dating back centuries, this royal artifact represents the spiritual and cultural authority bestowed upon the throne...",
     },
     {
-      title: "Lagos Cultural Festivals: Preserving Our Heritage",
+      title: "SULTAN OF SOKOTO",
       date: "March 5, 2024",
-      image: "/images/Eyo-Festival.jpg",
+      image: "/images/sultan.jpg",
       author: "Cultural Affairs Office",
       category: "Events",
       excerpt:
         "Experience the vibrant celebrations and festivals that make Lagos a cultural powerhouse. From the Eyo Festival to the annual Oba's Palace celebrations, discover how these events unite our community...",
     },
     {
-      title: "The Role of the Oba in Modern Lagos",
+      title: "OONI OF IFE",
       date: "February 28, 2024",
-      image: "/images/role-of-oba.jpg",
+      image: "/images/oniofife.jpg",
       author: "Palace Secretary",
       category: "Governance",
       excerpt:
         "Understanding the vital role of traditional leadership in contemporary Lagos society. How the palace bridges the gap between ancient wisdom and modern governance...",
     },
     {
-      title: "Palace Architecture: A Testament to Yoruba Craftsmanship",
+      title: "OLUBADAN OF IBADAN",
       date: "February 20, 2024",
-      image: "/images/palace.jpeg",
+      image: "/images/ibadan.jpg",
       author: "Royal Architect",
       category: "Architecture",
       excerpt:
         "Delve into the architectural marvel that is the Oba's Palace. Each carving, column, and courtyard tells a story of our people's artistic excellence...",
     },
     {
-      title: "Royal Customs and Court Etiquette",
+      title: "Emir of Kano",
       date: "February 15, 2024",
-      image: "/images/customs.jpg",
+      image: "/images/sankano.png",
       author: "Chief Protocol Officer",
       category: "Protocol",
       excerpt:

@@ -39,7 +39,8 @@ export default function Body() {
             animate={fadeInUp.animate}
             transition={{ ...fadeInUp.transition, delay: 0.2 }}
           >
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4" data-aos="zoom-in-left"  data-aos-easing="linear"
+     data-aos-duration="1500">
               <div className="bg-green-100 p-3 rounded-full mr-4 animate-bounce">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +72,8 @@ export default function Body() {
             animate={fadeInUp.animate}
             transition={{ ...fadeInUp.transition, delay: 0.3 }}
           >
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4" data-aos="zoom-in-right"  data-aos-easing="linear"
+     data-aos-duration="1500">
               <div className="bg-blue-100 p-3 rounded-full mr-4 animate-bounce">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

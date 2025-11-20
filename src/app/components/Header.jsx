@@ -8,7 +8,7 @@ export default function Header() {
   const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
+  const slides = [ 
     {
       image: "/images/oba-akiolu-3.png",
       title: "About The King",
@@ -16,7 +16,7 @@ export default function Header() {
     },
     {
       image: "/images/Eyo-Festival.jpg",
-      title: "Welcome to the legacy of Lagos",
+      title: "Welcome to the legacy of Nigeria Monarchs",
       link: "#",
     },
     {
@@ -47,13 +47,15 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-white/95 pt-0 md:pt-28 shadow-md py-4 relative">
+    <div className="bg-white/95 pt-0 md:pt-28 shadow-md py-4 relative"> 
       <div className="pb-12">
 
-         <h1 className="text-5xl text-center md:text-5xl font-bold mb-6 text-green-800">
-            {t("THE LEGACY OF LAGOS")}
+         <h1 className="text-5xl text-center md:text-5xl font-bold mb-6 text-green-800" data-aos="fade-down"  data-aos-easing="linear"
+     data-aos-duration="1500">
+            {t("THE LEGACY OF NIGERIA MONARCHS")}
           </h1>
-          <p className="md:text-xl text-center text-gray-600 max-w-3xl mx-auto">
+          <p className="md:text-xl text-center text-gray-600 max-w-3xl mx-auto"  data-aos="flip-up"  data-aos-easing="linear"
+     data-aos-duration="1500">
             {t("discoverRichHistory")}
           </p>
       </div>
