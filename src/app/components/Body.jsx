@@ -13,7 +13,7 @@ export default function Body() {
       date: "March 15, 2024",
       image: "/images/ObaofBenin.jpg",
       author: "His Royal Majesty",
-      category: "Traditions",
+      category: "Edo State",
       excerpt:
         "Discover the rich cultural heritage and beautiful traditions of Yoruba wedding ceremonies, from the engagement ceremony (Idana) to the grand reception. Learn about the significance of each ritual and how the palace preserves these sacred traditions...",
     },
@@ -22,7 +22,7 @@ export default function Body() {
       date: "March 10, 2024",
       image: "/images/alaafinOyo.jpg",
       author: "Palace Historian",
-      category: "Royal Heritage",
+      category: "Oyo State",
       excerpt:
         "Explore the symbolic significance and historical importance of the sacred crown worn by the Oba of Lagos. Dating back centuries, this royal artifact represents the spiritual and cultural authority bestowed upon the throne...",
     },
@@ -31,7 +31,7 @@ export default function Body() {
       date: "March 5, 2024",
       image: "/images/sultan.jpg",
       author: "Cultural Affairs Office",
-      category: "Events",
+      category: "Sokoto State",
       excerpt:
         "Experience the vibrant celebrations and festivals that make Lagos a cultural powerhouse. From the Eyo Festival to the annual Oba's Palace celebrations, discover how these events unite our community...",
     },
@@ -40,7 +40,7 @@ export default function Body() {
       date: "February 28, 2024",
       image: "/images/oniofife.jpg",
       author: "Palace Secretary",
-      category: "Governance",
+      category: "Osun State",
       excerpt:
         "Understanding the vital role of traditional leadership in contemporary Lagos society. How the palace bridges the gap between ancient wisdom and modern governance...",
     },
@@ -49,7 +49,7 @@ export default function Body() {
       date: "February 20, 2024",
       image: "/images/ibadan.jpg",
       author: "Royal Architect",
-      category: "Architecture",
+      category: "Oyo State",
       excerpt:
         "Delve into the architectural marvel that is the Oba's Palace. Each carving, column, and courtyard tells a story of our people's artistic excellence...",
     },
@@ -58,7 +58,7 @@ export default function Body() {
       date: "February 15, 2024",
       image: "/images/sankano.png",
       author: "Chief Protocol Officer",
-      category: "Protocol",
+      category: "Kano State",
       excerpt:
         "Learn about the proper protocols and customs observed in the royal court. From greetings to ceremonies, these traditions maintain the dignity of the throne...",
     },

@@ -10,7 +10,7 @@ export default function page() {
       date: "March 15, 2024",
       image: "/images/ObaofBenin.jpg",
       author: "His Royal Majesty",
-      category: "Traditions",
+      category: "Edo State ",
       excerpt:
         "Discover the rich cultural heritage and beautiful traditions of Yoruba wedding ceremonies, from the engagement ceremony (Idana) to the grand reception. Learn about the significance of each ritual and how the palace preserves these sacred traditions...",
     },
