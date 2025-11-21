@@ -1,10 +1,68 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Body() {
   const { t } = useLanguage();
+
+  const blogPosts = [
+    {
+      title: "OBA OF BENIN",
+      date: "March 15, 2024",
+      image: "/images/ObaofBenin.jpg",
+      author: "His Royal Majesty",
+      category: "Traditions",
+      excerpt:
+        "Discover the rich cultural heritage and beautiful traditions of Yoruba wedding ceremonies, from the engagement ceremony (Idana) to the grand reception. Learn about the significance of each ritual and how the palace preserves these sacred traditions...",
+    },
+    {
+      title: "ALAAFIN OF OYO",
+      date: "March 10, 2024",
+      image: "/images/alaafinOyo.jpg",
+      author: "Palace Historian",
+      category: "Royal Heritage",
+      excerpt:
+        "Explore the symbolic significance and historical importance of the sacred crown worn by the Oba of Lagos. Dating back centuries, this royal artifact represents the spiritual and cultural authority bestowed upon the throne...",
+    },
+    {
+      title: "SULTAN OF SOKOTO",
+      date: "March 5, 2024",
+      image: "/images/sultan.jpg",
+      author: "Cultural Affairs Office",
+      category: "Events",
+      excerpt:
+        "Experience the vibrant celebrations and festivals that make Lagos a cultural powerhouse. From the Eyo Festival to the annual Oba's Palace celebrations, discover how these events unite our community...",
+    },
+    {
+      title: "OONI OF IFE",
+      date: "February 28, 2024",
+      image: "/images/oniofife.jpg",
+      author: "Palace Secretary",
+      category: "Governance",
+      excerpt:
+        "Understanding the vital role of traditional leadership in contemporary Lagos society. How the palace bridges the gap between ancient wisdom and modern governance...",
+    },
+    {
+      title: "OLUBADAN OF IBADAN",
+      date: "February 20, 2024",
+      image: "/images/ibadan.jpg",
+      author: "Royal Architect",
+      category: "Architecture",
+      excerpt:
+        "Delve into the architectural marvel that is the Oba's Palace. Each carving, column, and courtyard tells a story of our people's artistic excellence...",
+    },
+    {
+      title: "Emir of Kano",
+      date: "February 15, 2024",
+      image: "/images/sankano.png",
+      author: "Chief Protocol Officer",
+      category: "Protocol",
+      excerpt:
+        "Learn about the proper protocols and customs observed in the royal court. From greetings to ceremonies, these traditions maintain the dignity of the throne...",
+    },
+  ];
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -18,7 +76,7 @@ export default function Body() {
     <div className="bg-gradient-to-b from-white to-gray-50 pb-20 text-black pt-24 shadow-md">
       <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col space-y-12">
         {/* Hero Section */}
-        { <MotionSection
+        {/* { <MotionSection
           className="text-center bg-green-100 p-12 mb-16"
           initial={fadeInUp.initial}
           animate={fadeInUp.animate}
@@ -30,7 +88,61 @@ export default function Body() {
           <p className=" text-gray-600 max-w-3xl mx-auto">
             {t("The Obas of Lagos have stood as enduring figures of leadership, from the founding of Lagos in the 17th century to its rise as a global metropolis. Our platform is your gateway to exploring this remarkable lineage and understanding the role of these royal leaders in shaping Lagos's identity and resilience. ")}
           </p>
-        </MotionSection>}
+        </MotionSection>} */}
+        {/* Monarchs section */}
+        <MotionSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.map((post, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
+              >
+                <div className="relative h-56">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm">
+                    {post.category}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center mb-3">
+                    <span className="ml-2 text-sm text-gray-600">
+                      {post.author}
+                    </span>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <span className="text-sm text-gray-500">{post.date}</span>
+                  </div>
+                  <h2 className="text-xl font-semibold text-gray-900 mb-3 hover:text-primary-600">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-600 mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <button className="bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors flex items-center">
+                    Read More
+                    <svg
+                      className="w-4 h-4 ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            ))}
+            </div>
+          </MotionSection>
           {/* Features Section */}
         <div className="grid md:grid-cols-2 gap-12">
           <MotionSection
@@ -62,9 +174,11 @@ export default function Body() {
               </h2>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              {t("The Obas of Lagos are more than just traditional leaders; they represent a bridge between the past and the future. By preserving their stories, we honor the resilience and diversity of Lagosians and celebrate the city’s pivotal role in Africa's cultural and economic landscape.")}
+              {t("The Nigeria Royalties are more than just traditional leaders; they represent a bridge between the past and the future. By preserving their stories, we honor the resilience and diversity of Nigerians and celebrate the city’s pivotal role in Africa's cultural and economic landscape.")}
             </p>
-          </MotionSection>
+          </MotionSection>         
+          
+           
 
           <MotionSection
             className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -95,10 +209,11 @@ export default function Body() {
               </h2>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              {t("Whether you're a history enthusiast, cultural explorer, or a proud Lagosian, this platform invites you to dive deep into the heart of Lagos’s royal heritage. Let the stories of courage, wisdom, and unity inspire you.")}
+              {t("Whether you're a history enthusiast, cultural explorer, or a proud Nigeria, this platform invites you to dive deep into the heart of Nigeria’s royal heritage. Let the stories of courage, wisdom, and unity inspire you.")}
             </p>
           </MotionSection>
         </div>
+        
 
         {/* Features Section */}
         <MotionSection

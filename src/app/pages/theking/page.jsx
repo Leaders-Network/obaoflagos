@@ -1,11 +1,85 @@
+"use client";
 import Navbar from '@/app/components/Navbar'
 import Footer from '@/app/components/Footer'
-import React from 'react'
+import React, { use } from 'react'
 
 export default function page() {
     return (
       <div className="min-h-screen font-[poppins] pt-16 bg-gradient-to-b from-gray-50 to-gray-100">
         <Navbar/>
+        <div className='w-full bg-green-100 hover:pause font-bold py-8 hidden md:block border-t overflow-visible'>
+          <div className='container mx-auto pl-72 animate-scroll whitespace-nowrap'>
+            <ul className='inline-flex space-x-8 text-sm text-gray-600'>
+              <li className='relative group'>
+                <a href='/pages/1600-1700-ado' className='hover:text-green-700'>Oba Ado (1600-1700)</a>
+                <ul className='absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 z-50'>
+                  <li><a href='/pages/1600-gabaro' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba Gabaro (1669–1704)</a></li>
+                  
+                </ul>
+              </li>
+              <li className='relative group'>
+                <a href='/pages/1701-1800-semoyin' className='hover:text-green-700'>Oba Akin Semoyin (1701-1800)</a>
+                <ul className='absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-60 z-50'>
+                  <li><a href='/pages/1749-1775-eletu' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Eletu Kekere (1749–1775)</a></li>
+                  <li><a href='/pages/1775-1801-ologun' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba Ologun Kutere (1775–1801)</a></li>
+                </ul>
+              </li>
+              <li className='relative group'>
+                <a href='/pages/1801-1900-ajosun' className='hover:text-green-700'>Oba Adele Ajosun (1801-1900)</a>
+                <ul className='absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-80 z-50'>
+                  <li><a href='/pages/1821-1829-oshinlokun' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Oshinlokun (1821–1829)</a></li>
+                  <li><a href='/pages/1829-1834-idewu' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba Idewu Ojulari (1829–1834)</a></li>
+                  <li><a href='/pages/1835-1837-adele' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba 	Adele Ajosun (Restored, 1835–1837)</a></li>
+                  <li><a href='/pages/1837-1841-oluwole' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Oluwole (1837–1841)</a></li>
+                  <li><a href='/pages/1841-1845-akitoye' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Akitoye (1841–1845)</a></li>
+                  <li><a href='/pages/1845-1851-kosoko' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Kosoko (1845–1851)</a></li>
+                  <li><a href='/pages/1851-1853-akitoye-restored' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Akitoye (Restored, 1851–1853)</a></li>
+                  <li><a href='/pages/1853-1885-dosunmu' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Dosunmu (1853–1885)</a></li>
+                </ul>
+              </li>
+              <li className='relative group'>
+                <a href='/pages/1901-2000-oyekan' className='hover:text-green-700'>Oba Oyekan I (1901-2000)</a>
+                <ul className='absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-70 z-50'>
+                  <li><a href='/pages/1901-1925-eleko' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Eshugbayi Eleko (1901–1925)</a></li>
+                  <li><a href='/pages/1925-1928-ibikunle' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Ibikunle Akitoye (1925–1928)</a></li>
+                  <li><a href='1931-1932-eleko-restored' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Eshugbayi Eleko (Restored, 1931–1932)</a></li>
+                  <li><a href='/pages/1949-1964-adele' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Adeniji Adele II (1949–1964)</a></li>
+                  <li><a href='/pages/1965-2003-oyekan' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700'>Oba	Adekola Oyekan II (1965–2003)</a></li>
+                </ul>
+              </li>
+            </ul>          
+            </div>
+        </div>
+    
+      <div className='h-24'></div>
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0)
+          }
+          100% {
+            transform: translateX(-50%)
+          }
+        }
+        .animate-scroll {
+          animation: scroll 20s linear infinite
+        }
+          .animate-scroll-reverse {
+            animation: scroll 20s linear infinite reverse
+          }
+          .animate-scroll-slow {
+            animation: scroll 40s linear infinite
+          }
+          .animate-scroll-reverse-slow {
+            animation: scroll 40s linear infinite reverse
+          }
+            .animate-scroll:hover,
+            .animate-scroll-reverse:hover,
+            .animate-scroll-slow:hover,
+            .animate-scroll-reverse-slow:hover {
+              animation-play-state: paused
+            }
+      `}</style>
         <div className="max-w-6xl mx-auto px-4 py-12 prose prose-lg">
           <h1 className="text-4xl font-bold text-green-700 mb-12 text-center leading-tight tracking-tight">Oba Rilwan Babatunde Osuolale Aremu Akiolu I: The Visionary Custodian of Lagos' Heritage</h1>
  

@@ -59,7 +59,7 @@ export default function Header() {
             {t("discoverRichHistory")}
           </p>
       </div>
-      <div className="mx-auto max-w-7xl px-4 md:px-8">
+      {/* <div className="mx-auto max-w-7xl px-4 md:px-8">
         
         <div className="h-[60vh] relative">
           <AnimatePresence mode="wait">
@@ -96,10 +96,10 @@ export default function Header() {
                 </a>
               </motion.div>
             </motion.div>
-          </AnimatePresence>
+          </AnimatePresence> */}
 
           {/* Navigation Buttons */}
-          <button
+          {/* <button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors duration-300"
           >
@@ -110,10 +110,10 @@ export default function Header() {
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors duration-300"
           >
             →
-          </button>
+          </button> */}
 
           {/* Slide Indicators */}
-          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {/* <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}
@@ -127,7 +127,7 @@ export default function Header() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
