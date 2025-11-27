@@ -28,6 +28,7 @@ export default function Navbar() {
       alt="Logo"
       width={100}
       height={89}
+      onClick={() => window.location.href('/')}
     />
           {/* <div className='text-3xl font-bold text-green-700 cursor-pointer' onClick={() => window.location.href = '/'}>
             NIGERIA ROYALTIES
@@ -41,7 +42,7 @@ export default function Navbar() {
 
             <div className='relative group'>
                           
-            <a href='/pages/blog' className='text-gray-700 hover:text-green-700'>Monarchs</a>
+            <a className='text-gray-700 hover:text-green-700'>Monarchs</a>
             <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
             <li className='relative group/nested'>
                             <a href='/pages/theking' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
@@ -252,7 +253,7 @@ export default function Navbar() {
     </div> */}
     <div className='relative group'>
                           
-                          <a href='/pages/blog' className='text-gray-800 font-medium hover:text-green-700'>Monarchs</a>
+                          <a href='#' className='text-gray-800 font-medium hover:text-green-700'>Monarchs</a>
                           <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
                           <li className='relative group/nested'>
                                           <a href='/pages/theking' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
