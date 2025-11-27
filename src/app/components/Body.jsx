@@ -3,17 +3,19 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
+import Link from "next/link";
 
 export default function Body() {
   const { t } = useLanguage();
 
   const blogPosts = [
     {
-      title: "OBA OF BENIN",
+      title: "OBA OF LAGOS",
       date: "March 15, 2024",
       image: "/images/ObaofBenin.jpg",
       author: "His Royal Majesty",
-      category: "Edo State",
+      category: "Lagos State",
+      url:"pages/theking",
       excerpt:
         "Discover the rich cultural heritage and beautiful traditions of Yoruba wedding ceremonies, from the engagement ceremony (Idana) to the grand reception. Learn about the significance of each ritual and how the palace preserves these sacred traditions...",
     },
@@ -23,6 +25,7 @@ export default function Body() {
       image: "/images/alaafinOyo.jpg",
       author: "Palace Historian",
       category: "Oyo State",
+      url:"pages/alaafin-of-oyo  ",
       excerpt:
         "Explore the symbolic significance and historical importance of the sacred crown worn by the Oba of Lagos. Dating back centuries, this royal artifact represents the spiritual and cultural authority bestowed upon the throne...",
     },
@@ -32,6 +35,7 @@ export default function Body() {
       image: "/images/sultan.jpg",
       author: "Cultural Affairs Office",
       category: "Sokoto State",
+      url:"#",
       excerpt:
         "Experience the vibrant celebrations and festivals that make Lagos a cultural powerhouse. From the Eyo Festival to the annual Oba's Palace celebrations, discover how these events unite our community...",
     },
@@ -41,6 +45,7 @@ export default function Body() {
       image: "/images/oniofife.jpg",
       author: "Palace Secretary",
       category: "Osun State",
+      url:"#",
       excerpt:
         "Understanding the vital role of traditional leadership in contemporary Lagos society. How the palace bridges the gap between ancient wisdom and modern governance...",
     },
@@ -50,6 +55,7 @@ export default function Body() {
       image: "/images/ibadan.jpg",
       author: "Royal Architect",
       category: "Oyo State",
+      url:"#",
       excerpt:
         "Delve into the architectural marvel that is the Oba's Palace. Each carving, column, and courtyard tells a story of our people's artistic excellence...",
     },
@@ -59,6 +65,7 @@ export default function Body() {
       image: "/images/sankano.png",
       author: "Chief Protocol Officer",
       category: "Kano State",
+      url:"#",
       excerpt:
         "Learn about the proper protocols and customs observed in the royal court. From greetings to ceremonies, these traditions maintain the dignity of the throne...",
     },
@@ -76,7 +83,7 @@ export default function Body() {
     <div className="bg-gradient-to-b from-white to-gray-50 pb-20 text-black pt-24 shadow-md">
       <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col space-y-12">
         {/* Hero Section */}
-        {/* { <MotionSection
+         <MotionSection
           className="text-center bg-green-100 p-12 mb-16"
           initial={fadeInUp.initial}
           animate={fadeInUp.animate}
@@ -88,7 +95,7 @@ export default function Body() {
           <p className=" text-gray-600 max-w-3xl mx-auto">
             {t("The Obas of Lagos have stood as enduring figures of leadership, from the founding of Lagos in the 17th century to its rise as a global metropolis. Our platform is your gateway to exploring this remarkable lineage and understanding the role of these royal leaders in shaping Lagos's identity and resilience. ")}
           </p>
-        </MotionSection>} */}
+        </MotionSection>
         {/* Monarchs section */}
         <MotionSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,12 +105,16 @@ export default function Body() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
               >
                 <div className="relative h-56">
+                  <Link href={post.url}>
                   <Image
                     src={post.image}
                     alt={post.title}
                     fill
                     className="object-cover"
                   />
+                  </Link>
+                
+                  
                   <div className="absolute top-4 left-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm">
                     {post.category}
                   </div>

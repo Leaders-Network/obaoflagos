@@ -47,8 +47,8 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-white/95 pt-0 md:pt-28 shadow-md py-4 relative"> 
-      <div className="pb-12">
+    <div className="bg-white/95 pt-0 md:pt-28 shadow-md py-4 mt-20 relative"> 
+      <div className  ="pb-12">
 
          <h1 className="text-5xl text-center md:text-5xl font-bold mb-6 text-green-800" data-aos="fade-down"  data-aos-easing="linear"
      data-aos-duration="1500">
@@ -96,10 +96,10 @@ export default function Header() {
                 </a>
               </motion.div>
             </motion.div>
-          </AnimatePresence> */}
+          </AnimatePresence>
 
-          {/* Navigation Buttons */}
-          {/* <button
+         
+          <button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors duration-300"
           >
@@ -110,10 +110,10 @@ export default function Header() {
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full transition-colors duration-300"
           >
             →
-          </button> */}
+          </button>
 
-          {/* Slide Indicators */}
-          {/* <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          
+          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}

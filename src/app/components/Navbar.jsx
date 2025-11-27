@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import Image from "next/image";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -22,54 +23,65 @@ export default function Navbar() {
     <>
       <nav className='bg-white font-[poppins] shadow-md fixed w-full top-0 z-50'>
         <div className='container mx-auto px-4 py-3 flex justify-between items-center'>
-          <div className='text-2xl font-bold text-green-700 cursor-pointer' onClick={() => window.location.href = '/'}>
+                    <Image 
+      src="/logo.png"
+      alt="Logo"
+      width={100}
+      height={89}
+    />
+          {/* <div className='text-3xl font-bold text-green-700 cursor-pointer' onClick={() => window.location.href = '/'}>
             NIGERIA ROYALTIES
-          </div>
+          </div> */}
+                   
+        
           
           <div className='hidden items-center font-semibold md:flex space-x-6'>
             <a href='/pages/about' className='text-gray-700 hover:text-green-700'>About</a>
             {/* <a href='/pages/theking' className='text-gray-700 hover:text-green-700'>Oba Akiolu</a> */}
-            <a href='/pages/blog' className='text-gray-700 hover:text-green-700'>Monarchs</a>
+
             <div className='relative group'>
-              <a href='' className='text-gray-700 hover:text-green-700'>States</a>
-              <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
-              <li className='relative group/nested'>
+                          
+            <a href='/pages/blog' className='text-gray-700 hover:text-green-700'>Monarchs</a>
+            <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
+            <li className='relative group/nested'>
                             <a href='/pages/theking' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
-                              Oba of Lagos
+                              Oba Of Lagos
                               <span>▶</span>
                             </a>
-                          </li> 
+                          </li>
                           <li className='relative group/nested'>
-                            <a href='#' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                            <a href='/pages/alaafin-of-oyo' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
                               Alaafin of Oyo
                               <span>▶</span>
                             </a>
-                          </li> 
+                          </li>
                           <li className='relative group/nested'>
-                            <a href='#' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                            <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                              Sultan of Sokoto
+                              <span>▶</span>
+                            </a>
+                          </li>
+                          <li className='relative group/nested'>
+                            <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                              Ooni of Ife
+                              <span>▶</span>
+                            </a>
+                          </li>
+                          <li className='relative group/nested'>
+                            <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                              Olubadan of Ibadan
+                              <span>▶</span>
+                            </a>
+                          </li>
+                          <li className='relative group/nested'>
+                            <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
                               Emir of Kano
                               <span>▶</span>
                             </a>
                           </li>
-                          <li className='relative group/nested'>
-                            <a href='#' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
-                              Oba of Benin
-                              <span>▶</span>
-                            </a>
-                          </li>
-                          <li className='relative group/nested'>
-                            <a href='#' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
-                              Sultan of Sokoto
-                              <span>▶</span>
-                            </a>
-                          </li> 
-                          <li className='relative group/nested'>
-                            <a href='#' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
-                              Deji of Akure
-                              <span>▶</span>
-                            </a>
-                          </li>                  
-              </ul>
+
+            </ul>
+
             </div>
                       <div className='relative group'>
                         <a href='#' className='text-gray-700 hover:text-green-700'>History</a>
@@ -127,7 +139,7 @@ export default function Navbar() {
                             </ul>
                           </li>
                         </ul>
-                      </div>            
+                      </div>
             <a href='/pages/contact' className='text-gray-700 hover:text-green-700'>Contact</a>
             <div className="relative">
               <button 
@@ -173,8 +185,8 @@ export default function Navbar() {
 
   <nav className="mt-8 space-y-4">
     <a href = "/pages/about" className="block text-lg font-medium text-gray-800 hover:text-green-700">About</a>
-    <a href = "/pages/theking" className="block text-lg font-medium text-gray-800 hover:text-green-700">Oba Akiolu</a>
-    <div className=' relative group'>
+    {/* <a href = "/pages/theking" className="block text-lg font-medium text-gray-800 hover:text-green-700">Oba Akiolu</a> */}
+    {/* <div className=' relative group'>
     <a className="block text-lg font-medium text-gray-800 hover:text-green-700">History</a>
     <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
                           <li className='relative group/nested'>
@@ -237,7 +249,51 @@ export default function Navbar() {
                           </ul>
     
 
-    </div>
+    </div> */}
+    <div className='relative group'>
+                          
+                          <a href='/pages/blog' className='text-gray-800 font-medium hover:text-green-700'>Monarchs</a>
+                          <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
+                          <li className='relative group/nested'>
+                                          <a href='/pages/theking' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                                            Oba Of Lagos
+                                            <span>▶</span>
+                                          </a>
+                                        </li>
+                                        <li className='relative group/nested'>
+                                          <a href='/pages/alaafin-of-oyo' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                                            Alaafin of Oyo
+                                            <span>▶</span>
+                                          </a>
+                                        </li>
+                                        <li className='relative group/nested'>
+                                          <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                                            Sultan of Sokoto
+                                            <span>▶</span>
+                                          </a>
+                                        </li>
+                                        <li className='relative group/nested'>
+                                          <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                                            Ooni of Ife
+                                            <span>▶</span>
+                                          </a>
+                                        </li>
+                                        <li className='relative group/nested'>
+                                          <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                                            Olubadan of Ibadan
+                                            <span>▶</span>
+                                          </a>
+                                        </li>
+                                        <li className='relative group/nested'>
+                                          <a href='/pages/1600-1700-ado' className='block px-4 py-2 hover:bg-green-50 hover:text-green-700 flex justify-between items-center'>
+                                            Emir of Kano
+                                            <span>▶</span>
+                                          </a>
+                                        </li>
+              
+                          </ul>
+              
+                          </div>
     
     <a href = "/pages/blog" className="block text-lg font-medium text-gray-800 hover:text-green-700">Blog</a>
     <a href = "/pages/contact" className="block text-lg font-medium text-gray-800 hover:text-green-700">Contact</a>
@@ -245,8 +301,63 @@ export default function Navbar() {
 </div>
 
         </div>
-        
-       </nav>
+        <div className='w-full bg-green-100 hover:pause font-bold py-8 hidden md:block border-t overflow-visible'>
+          <div className='container mx-auto pl-72 animate-scroll whitespace-nowrap'>
+            <ul className='inline-flex space-x-8 text-sm text-gray-600'>
+              <li className='relative group'>
+                <a href='/pages/theking' className='hover:text-green-700'>OBA OF LAGOS</a>
+               
+              </li>
+              <li className='relative group'>
+                <a href='/pages/alaafin-of-oyo  ' className='hover:text-green-700'>ALAAFIN OF OYO</a>
+           
+              </li>
+              <li className='relative group'>
+                <a href='#' className='hover:text-green-700'>SULTAN OF SOKOTO</a>
+                
+              </li>
+              <li className='relative group'>
+                <a href='#' className='hover:text-green-700'>OONI OF IFE</a>               
+              </li>
+              <li className='relative group'>
+                <a href='#' className='hover:text-green-700'>OLUBADAN OF IBADAN</a>               
+              </li>
+              <li className='relative group'>
+                <a href='#' className='hover:text-green-700'>EMIR OF KANO</a>               
+              </li>
+            </ul>          
+            </div>
+        </div>
+      </nav>
+      <div className='h-20'></div>
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0)
+          }
+          100% {
+            transform: translateX(-50%)
+          }
+        }
+        .animate-scroll {
+          animation: scroll 20s linear infinite
+        }
+          .animate-scroll-reverse {
+            animation: scroll 20s linear infinite reverse
+          }
+          .animate-scroll-slow {
+            animation: scroll 40s linear infinite
+          }
+          .animate-scroll-reverse-slow {
+            animation: scroll 40s linear infinite reverse
+          }
+            .animate-scroll:hover,
+            .animate-scroll-reverse:hover,
+            .animate-scroll-slow:hover,
+            .animate-scroll-reverse-slow:hover {
+              animation-play-state: paused
+            }
+      `}</style>
     </>
   )
 }
