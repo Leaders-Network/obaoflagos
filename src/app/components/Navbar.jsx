@@ -28,18 +28,17 @@ export default function Navbar() {
       alt="Logo"
       width={100}
       height={89}
-      onClick={() => window.location.href('/')}
+      onClick={() => window.location.href = '/'}
     />
-          {/* <div className='text-3xl font-bold text-green-700 cursor-pointer' onClick={() => window.location.href = '/'}>
+              {/* <div className='text-3xl font-bold text-green-700 cursor-pointer' onClick={() => window.location.href = '/'}>
             NIGERIA ROYALTIES
-          </div> */}
-                   
+          </div> */}                   
         
           
           <div className='hidden items-center font-semibold md:flex space-x-6'>
+            <a href='/' className='text-gray-700 hover:text-green-700'>Home</a>
             <a href='/pages/about' className='text-gray-700 hover:text-green-700'>About</a>
-            {/* <a href='/pages/theking' className='text-gray-700 hover:text-green-700'>Oba Akiolu</a> */}
-
+            
             <div className='relative group'>
                           
             <a className='text-gray-700 hover:text-green-700'>Monarchs</a>
@@ -84,7 +83,7 @@ export default function Navbar() {
             </ul>
 
             </div>
-                      <div className='relative group'>
+                      {/* <div className='relative group'>
                         <a href='#' className='text-gray-700 hover:text-green-700'>History</a>
                         <ul className='absolute hidden group-hover:block bg-white text-black shadow-lg rounded-md py-2 w-48 z-50'>
                           <li className='relative group/nested'>
@@ -140,7 +139,7 @@ export default function Navbar() {
                             </ul>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
             <a href='/pages/contact' className='text-gray-700 hover:text-green-700'>Contact</a>
             <div className="relative">
               <button 
@@ -185,6 +184,7 @@ export default function Navbar() {
   </button>
 
   <nav className="mt-8 space-y-4">
+    <a href='/'  className='block text-lg font-medium text-gray-800 hover:text-green-700'>Home</a>
     <a href = "/pages/about" className="block text-lg font-medium text-gray-800 hover:text-green-700">About</a>
     {/* <a href = "/pages/theking" className="block text-lg font-medium text-gray-800 hover:text-green-700">Oba Akiolu</a> */}
     {/* <div className=' relative group'>
@@ -296,7 +296,7 @@ export default function Navbar() {
               
                           </div>
     
-    <a href = "/pages/blog" className="block text-lg font-medium text-gray-800 hover:text-green-700">Blog</a>
+    {/* <a href = "/pages/blog" className="block text-lg font-medium text-gray-800 hover:text-green-700">Blog</a> */}
     <a href = "/pages/contact" className="block text-lg font-medium text-gray-800 hover:text-green-700">Contact</a>
   </nav>
 </div>
