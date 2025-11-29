@@ -133,8 +133,9 @@ export default function Body() {
                   <p className="text-gray-600 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  <button className="bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors flex items-center">
-                    Read More
+                  <button className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors flex items-center">
+                    
+                    <Link href={post.url}>Read More</Link>
                     <svg
                       className="w-4 h-4 ml-2"
                       fill="none"
