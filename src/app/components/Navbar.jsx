@@ -28,6 +28,7 @@ export default function Navbar() {
       alt="Logo"
       width={100}
       height={89}
+      className="w-16 sm:w-24 h-auto cursor-pointer"
       onClick={() => window.location.href = '/'}
     />
               {/* <div className='text-3xl font-bold text-green-700 cursor-pointer' onClick={() => window.location.href = '/'}>
